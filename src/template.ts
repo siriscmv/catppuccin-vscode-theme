@@ -1,22 +1,28 @@
-import * as ayu from '../colours'
+import * as catppuccin from '../colours'
 
-export type SchemeName = 'light' | 'dark' | 'mirage'
+export type SchemeName = 'latte' | 'frappe' | 'macchiato' | 'mocha'
 
 const terminalColors = {
-  light: {
-    black: '#000000',
+  latte: {
+    black: catppuccin.latte.ui.line.hex(),
     white: '#c7c7c7',
     brightBlack: '#686868',
     brightWhite: '#d1d1d1'
   },
-  dark: {
-    black: ayu.dark.ui.line.hex(),
+  frappe: {
+    black: catppuccin.frappe.ui.line.hex(),
     white: '#c7c7c7',
     brightBlack: '#686868',
     brightWhite: '#ffffff'
   },
-  mirage: {
-    black: ayu.mirage.ui.line.hex(),
+  macchiato: {
+    black: catppuccin.macchiato.ui.line.hex(),
+    white: '#c7c7c7',
+    brightBlack: '#686868',
+    brightWhite: '#ffffff'
+  }, 
+  mocha: {
+    black: catppuccin.mocha.ui.line.hex(),
     white: '#c7c7c7',
     brightBlack: '#686868',
     brightWhite: '#ffffff'
@@ -24,9 +30,9 @@ const terminalColors = {
 }
 
 export default (variant: SchemeName, bordered: boolean) => {
-  const scheme = ayu[variant]
+  const scheme = catppuccin[variant]
   return {
-    type: variant === 'light' ? 'light' : 'dark',
+    type: variant === 'latte' ? 'light' : 'dark',
     colors: {
       // Colour reference https://code.visualstudio.com/docs/getstarted/theme-color-reference
 
@@ -66,12 +72,12 @@ export default (variant: SchemeName, bordered: boolean) => {
       'input.border': scheme.ui.fg.alpha(0.27).hex(),
       'input.foreground': scheme.editor.fg.hex(),
       'input.placeholderForeground': scheme.ui.fg.alpha(0.5).hex(),
-      'inputOption.activeBorder': (variant == 'light' ? scheme.common.accent.darken(0.2) : scheme.common.accent)
+      'inputOption.activeBorder': (variant == 'latte' ? scheme.common.accent.darken(0.2) : scheme.common.accent)
         .alpha(0.3)
         .hex(),
       'inputOption.activeBackground': scheme.common.accent.alpha(0.2).hex(),
       'inputOption.activeForeground':
-        variant == 'light' ? scheme.common.accent.darken(0.2).hex() : scheme.common.accent.hex(),
+        variant == 'latte' ? scheme.common.accent.darken(0.2).hex() : scheme.common.accent.hex(),
       'inputValidation.errorBackground': scheme.editor.bg.hex(),
       'inputValidation.errorBorder': scheme.common.error.hex(),
       'inputValidation.infoBackground': scheme.ui.bg.hex(),
@@ -87,7 +93,7 @@ export default (variant: SchemeName, bordered: boolean) => {
 
       // BADGE
       'badge.background': scheme.common.accent.alpha(0.2).hex(),
-      'badge.foreground': variant == 'light' ? scheme.common.accent.darken(0.2).hex() : scheme.common.accent.hex(),
+      'badge.foreground': variant == 'latte' ? scheme.common.accent.darken(0.2).hex() : scheme.common.accent.hex(),
 
       // PROGRESS BAR
       'progressBar.background': scheme.common.accent.hex(),
