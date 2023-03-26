@@ -16,23 +16,23 @@
 
 ### Latte
 
-![Latte](assets/latte.png)
-![Latte Bordered](assets/latte-bordered.png)
+- Standard ![Latte](assets/latte.png)
+- Bordered ![Latte Bordered](assets/latte-bordered.png)
 
 ### Frappe
 
-![Frappe](assets/frappe.png)
-![Frappe Bordered](assets/frappe-bordered.png)
+- Standard ![Frappe](assets/frappe.png)
+- Bordered ![Frappe Bordered](assets/frappe-bordered.png)
 
 ### Macchiato
 
-![Macchiato](assets/macchiato.png)
-![Macchiato Bordered](assets/macchiato-bordered.png)
+- Standard ![Macchiato](assets/macchiato.png)
+- Bordered ![Macchiato Bordered](assets/macchiato-bordered.png)
 
 ### Mocha
 
-![Mocha](assets/mocha.png)
-![Mocha Bordered](assets/mocha-bordered.png)
+- Standard ![Mocha](assets/mocha.png)
+- Bordered ![Mocha Bordered](assets/mocha-bordered.png)
 
 ## Development
 
