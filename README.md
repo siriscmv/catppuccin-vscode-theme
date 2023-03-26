@@ -1,30 +1,49 @@
-![vscode-ayu](assets/header.png)
+# Catppuccin VSCode Theme
 
-> Source from: https://github.com/dempfi/ayu
+![Catppuccin-vscode](assets/logo.png)
 
-Modified version of the Ayu theme with green accents.
+## Installation
+
+- Install the theme from the [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=Siris01.catppuccin-theme)
+
+## Credits
+
+- [catppuccin](https://github.com/catppuccin/catppuccin) - Color scheme
+- [ayu-colors](https://github.com/ayu-theme/ayu-colors) - Build scripts and color modification libraries
+- [vscode-ayu](https://github.com/ayu-theme/vscode-ayu) - Icons + VSCode theme template
+
 ## Screenshots
 
-#### Light
-![Light](assets/light.png)
-![Light Bordered](assets/light-bordered.png)
+### Latte
 
-#### Mirage
-![Mirage](assets/mirage.png)
-![Mirage Bordered](assets/mirage-bordered.png)
+![Latte](assets/latte.png)
+![Latte Bordered](assets/latte-bordered.png)
 
-#### Dark
-![Dark](assets/dark.png)
-![Dark Bordered](assets/dark-bordered.png)
+### Frappe
+
+![Frappe](assets/frappe.png)
+![Frappe Bordered](assets/frappe-bordered.png)
+
+### Macchiato
+
+![Macchiato](assets/macchiato.png)
+![Macchiato Bordered](assets/macchiato-bordered.png)
+
+### Mocha
+
+![Mocha](assets/mocha.png)
+![Mocha Bordered](assets/mocha-bordered.png)
 
 ## Development
 
-Install dependencies
+- Install dependencies
+
 ```shell
-npm install
+pnpm install
 ```
 
-Update themes and build VSIX package
+- Update themes and build VSIX package
+
 ```shell
-npm run build && npm run package
+pnpm start
 ```

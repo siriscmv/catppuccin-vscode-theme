@@ -1,17 +1,16 @@
 {
-  "name": "ayu-green",
-  "displayName": "Ayu Green",
-  "description": "A simple theme with bright colors and comes in three versions — dark, light and mirage for all day long comfortable work.",
-  "version": "1.0.1",
+  "name": "catppuccin-theme",
+  "displayName": "Catppuccin vscode theme",
+  "description": "Soothing pastel theme",
+  "version": "0.1.0",
   "publisher": "Siris01",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Siris01/ayu-green"
+    "url": "https://github.com/Siris01/catppuccin-vscode-theme"
   },
   "bugs": {
-    "url": "https://github.com/Siris01/ayu-green/issue",
-    "email": "teabyii@gmail.com"
+    "url": "https://github.com/Siris01/catppuccin-vscode-theme/issue"
   },
   "engines": {
     "vscode": "^1.13.0"
@@ -22,41 +21,51 @@
   "keywords": [
     "icon-theme",
     "theme",
-    "ayu"
+    "catppuccin"
   ],
-  "homepage": "https://github.com/Siris01/ayu-green",
+  "homepage": "https://github.com/Siris01/catppuccin-vscode-theme",
   "icon": "assets/logo.png",
   "contributes": {
     "themes": [
       {
-        "label": "Ayu Green Dark",
-        "uiTheme": "vs-dark",
-        "path": "./ayu-dark.json"
-      },
-      {
-        "label": "Ayu Green Dark Bordered",
-        "uiTheme": "vs-dark",
-        "path": "./ayu-dark-bordered.json"
-      },
-      {
-        "label": "Ayu Green Light",
+        "label": "Catppuccin Latte",
         "uiTheme": "vs",
-        "path": "./ayu-light.json"
+        "path": "./catppuccin-latte.json"
       },
       {
-        "label": "Ayu Green Light Bordered",
+        "label": "Catppuccin Latte Bordered",
         "uiTheme": "vs",
-        "path": "./ayu-light-bordered.json"
+        "path": "./catppuccin-latte-bordered.json"
       },
       {
-        "label": "Ayu Green Mirage",
-        "uiTheme": "vs-dark",
-        "path": "./ayu-mirage.json"
+        "label": "Catppuccin Frappe",
+        "uiTheme": "vs",
+        "path": "./catppuccin-frappe.json"
       },
       {
-        "label": "Ayu Green Mirage Bordered",
+        "label": "Catppuccin Frappe Bordered",
+        "uiTheme": "vs",
+        "path": "./catppuccin-frappe-bordered.json"
+      },
+      {
+        "label": "Catppuccin Macchiato",
         "uiTheme": "vs-dark",
-        "path": "./ayu-mirage-bordered.json"
+        "path": "./catppuccin-macchiato.json"
+      },
+      {
+        "label": "Catppuccin Macchiato Bordered",
+        "uiTheme": "vs-dark",
+        "path": "./catppuccin-macchiato-bordered.json"
+      },
+      {
+        "label": "Catppuccin Mocha",
+        "uiTheme": "vs-dark",
+        "path": "./catppuccin-mocha.json"
+      },
+      {
+        "label": "Catppuccin Mocha Bordered",
+        "uiTheme": "vs-dark",
+        "path": "./catppuccin-mocha-bordered.json"
       }
     ],
     "iconThemes": [
@@ -75,7 +84,6 @@
   },
   "devDependencies": {
     "@types/node": "^16.6.0",
-    "ayu": "^8.0.1",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.3",
     "vsce": "^1.96.1"

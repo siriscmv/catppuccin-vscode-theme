@@ -14,12 +14,5 @@
 /node_modules
 .dart_tool
 pubspec.lock
-*.vsix
 
-package-lock.json
-yarn.lock
-
-colours/node_modules
-colours/package-lock.json
-colours/yarn.lock
-colours/dist
+*lock*

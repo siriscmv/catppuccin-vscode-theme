@@ -3,9 +3,9 @@ import * as path from 'path'
 import template, { SchemeName } from './template'
 
 const filePath = (variant: string, bordered: boolean) =>
-  path.join(process.cwd(), `/ayu-${variant}${bordered ? '-bordered' : ''}.json`)
+  path.join(process.cwd(), `/catppuccin-${variant}${bordered ? '-bordered' : ''}.json`)
 
-;['light', 'dark', 'mirage'].map((variant: SchemeName) => {
+;['latte', 'frappe', 'macchiato', 'mocha'].map((variant: SchemeName) => {
   const bordered = JSON.stringify(template(variant, true), null, '\t')
   const nonBordered = JSON.stringify(template(variant, false), null, '\t')
 
