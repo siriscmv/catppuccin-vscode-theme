@@ -2,6 +2,12 @@
 
 ![Catppuccin-vscode](assets/logo.png)
 
+## Note
+
+- Catppuccin has their own [VSCode theme](https://github.com/catppuccin/vscode)
+- This theme is a different implementation of the same catppuccin color scheme
+- This repo was forked from [ayu-green](https://github.com/Siris01/ayu-green-) which is a fork of [vscode-ayu](https://github.com/ayu-theme/vscode-ayu)
+
 ## Installation
 
 - Install the theme from the [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=Siris01.catppuccin-theme)
