@@ -1,0 +1,28 @@
+{
+  "main": "dist/colors.js",
+  "types": "dist/colors.d.ts",
+  "scripts": {
+    "build": "run-s clear-build compile",
+    "compile": "tsc --pretty",
+    "svg": "node scripts/build-svg.js",
+    "prepublish": "run-s build svg",
+    "clear-build": "rimraf dist",
+    "start": "run-s build svg"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/node": "^9.4.6",
+    "font-color-contrast": "1.0.3",
+    "is-object": "1.0.1",
+    "npm-run-all": "3.1.1",
+    "rimraf": "2.5.4",
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "@types/chroma-js": "^2.0.0",
+    "chroma-js": "^2.1.0",
+    "nonenumerable": "^1.1.1"
+  }
+}
