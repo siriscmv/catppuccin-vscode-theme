@@ -169,7 +169,7 @@ export default (variant: SchemeName, bordered: boolean) => {
       'editor.background': bordered ? scheme.editor.bg.hex() : scheme.ui.bg.hex(),
       'editor.foreground': scheme.editor.fg.hex(),
       'editorLineNumber.foreground': scheme.editor.gutter.normal.hex(),
-      'editorLineNumber.activeForeground': scheme.editor.gutter.active.hex(),
+      'editorLineNumber.activeForeground': scheme.common.accent.hex(),
       'editorCursor.foreground': scheme.common.accent.hex(),
 
       // EDITOR SELECTIONS
