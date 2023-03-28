@@ -25,8 +25,8 @@ const vcs = {
 
 const editor = {
   fg: e`#4c4f69`, // Text
-  bg: e`#dce0e8`, // Crust
-  line: e`#eff1f5`, // Base
+  bg: e`#eff1f5`, // Base
+  line: e`#dce0e8`, // Crust
   selection: {
     active: e`#1e66f5`.alpha(0.25), // Blue
     inactive: e`#1e66f5`.alpha(0.13) // Blue
@@ -48,7 +48,7 @@ const editor = {
 const ui = {
   fg: u`#9ca0b0`, // Overlay0
   bg: u`#e6e9ef`, // Mantle
-  line: u`#e6e9ef`, // Mantle
+  line: u`#dce0e8`, // Crust
   selection: {
     active: u`#7c7f93`.alpha(0.15), // Overlay2
     normal: u`#8c8fa1`.alpha(0.12) // Overlay1
