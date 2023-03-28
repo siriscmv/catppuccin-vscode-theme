@@ -49,7 +49,7 @@
 		"list.highlightForeground": "#ca9ee6",
 		"list.deemphasizedForeground": "#e78284",
 		"list.hoverBackground": "#949cbb26",
-		"list.inactiveSelectionBackground": "#838ba71f",
+		"list.inactiveSelectionBackground": "#949cbb1f",
 		"list.inactiveSelectionForeground": "#737994",
 		"list.invalidItemForeground": "#7379944d",
 		"list.errorForeground": "#e78284",
