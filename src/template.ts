@@ -133,9 +133,9 @@ export default (variant: SchemeName, bordered: boolean) => {
       // SIDE BAR
       'sideBar.background': scheme.ui.bg.hex(),
       'sideBar.border': bordered ? scheme.ui.line.hex() : scheme.ui.bg.hex(),
-      'sideBarTitle.foreground': scheme.ui.fg.hex(),
+      'sideBarTitle.foreground': scheme.common.accent.hex(),
       'sideBarSectionHeader.background': scheme.ui.bg.hex(),
-      'sideBarSectionHeader.foreground': scheme.ui.fg.hex(),
+      'sideBarSectionHeader.foreground': scheme.common.accent.hex(),
       'sideBarSectionHeader.border': bordered ? scheme.ui.line.hex() : scheme.ui.bg.hex(),
 
       // MINIMAP
