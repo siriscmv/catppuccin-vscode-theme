@@ -87,9 +87,9 @@ export default (variant: SchemeName, bordered: boolean) => {
 
       // SCROLLBAR CONTROL
       'scrollbar.shadow': scheme.ui.line.alpha(0).hex(),
-      'scrollbarSlider.background': scheme.ui.fg.alpha(0.4).hex(),
-      'scrollbarSlider.hoverBackground': scheme.ui.fg.alpha(0.6).hex(),
-      'scrollbarSlider.activeBackground': scheme.ui.fg.alpha(0.7).hex(),
+      'scrollbarSlider.background': scheme.common.accent.alpha(0.4).hex(),
+      'scrollbarSlider.hoverBackground': scheme.common.accent.alpha(0.6).hex(),
+      'scrollbarSlider.activeBackground': scheme.common.accent.alpha(0.7).hex(),
 
       // BADGE
       'badge.background': scheme.common.accent.alpha(0.2).hex(),
