@@ -54,7 +54,6 @@ export class Color {
   }
 }
 
-export default (bg: string) => (hex: TemplateStringsArray) =>
-  new Color(chroma(hex.join('')), chroma(bg))
+export default (bg: string) => (hex: string) => new Color(chroma(hex), chroma(bg))
 
 export const alphaBlend = (blend: boolean) => (Color.blend = blend)
