@@ -63,7 +63,7 @@ export default (variant: SchemeName, bordered: boolean) => {
       'button.secondaryHoverBackground': scheme.ui.fg.alpha(0.5).hex(),
 
       // DROPDOWN CONTROL
-      'dropdown.background': scheme.editor.bg.hex(),
+      'dropdown.background': scheme.ui.bg.hex(),
       'dropdown.foreground': scheme.ui.fg.hex(),
       'dropdown.border': scheme.ui.fg.alpha(0.27).hex(),
 
