@@ -67,7 +67,14 @@ export type Scheme = {
   }
 };
 
-function generateTheme (name: 'latte' | 'frappe' | 'macchiato' | 'mocha') {
+export function generateTheme (name: 'latte' | 'frappe' | 'macchiato' | 'mocha', overrides: any = {}) {
+
+  for (const key in overrides) {
+    if (overrides.hasOwnProperty(key)) {
+      variants[name][key].hex = overrides[key];
+    }
+  }
+
   const u = color(variants[name].crust.hex);
   const e = color(variants[name].mantle.hex);
 

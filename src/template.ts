@@ -1,6 +1,13 @@
-import * as catppuccin from '../colours'
+import {generateTheme} from '../colours/'
 
-export type SchemeName = 'latte' | 'frappe' | 'macchiato' | 'mocha'
+export type SchemeName = 'latte' | 'frappe' | 'macchiato' | 'mocha';
+
+const catppuccin = {
+  latte: generateTheme('latte'),
+  frappe: generateTheme('frappe'),
+  macchiato: generateTheme('macchiato'),
+  mocha: generateTheme('mocha')
+}
 
 const terminalColors = {
   latte: {
@@ -29,8 +36,13 @@ const terminalColors = {
   }
 }
 
-export default (variant: SchemeName, bordered: boolean) => {
-  const scheme = catppuccin[variant]
+export default (variant: SchemeName, bordered: boolean, darker: boolean = false) => {
+  let overrides = {};
+  if (darker) {
+    overrides['mantle'] = '#151517'
+  }
+  let scheme = generateTheme(variant, overrides);
+
   return {
     type: variant === 'latte' ? 'light' : 'dark',
     colors: {

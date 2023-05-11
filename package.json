@@ -68,24 +68,24 @@
         "path": "./catppuccin-mocha-bordered.json"
       },
       {
-        "label": "Catppuccin latte Borderless",
+        "label": "Catppuccin latte Darker",
         "uiTheme": "vs",
-        "path": "./catppuccin-latte-borderless.json"
+        "path": "./catppuccin-latte-darker.json"
       },
       {
-        "label": "Catppuccin Frappe Borderless",
+        "label": "Catppuccin Frappe Darker",
         "uiTheme": "vs-dark",
-        "path": "./catppuccin-frappe-borderless.json"
+        "path": "./catppuccin-frappe-darker.json"
       },
       {
-        "label": "Catppuccin Macchiato Borderless",
+        "label": "Catppuccin Macchiato Darker",
         "uiTheme": "vs-dark",
-        "path": "./catppuccin-macchiato-borderless.json"
+        "path": "./catppuccin-macchiato-darker.json"
       },
       {
-        "label": "Catppuccin Mocha Borderless",
+        "label": "Catppuccin Mocha Darker",
         "uiTheme": "vs-dark",
-        "path": "./catppuccin-mocha-borderless.json"
+        "path": "./catppuccin-mocha-darker.json"
       }
     ],
     "iconThemes": [
