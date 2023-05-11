@@ -4,7 +4,7 @@ import template, { SchemeName } from './template'
 import borderLesstemplate from './borderless'
 
 const filePath = (variant: string, ext?: string) =>
-  path.join(process.cwd(), `/catppuccin-${variant}${ext ? '-bordered' : ''}.json`);
+  path.join(process.cwd(), `/catppuccin-${variant}${ext ? `-${ext}` : ''}.json`);
   
 
 ['latte', 'frappe', 'macchiato', 'mocha'].map((variant: SchemeName) => {
