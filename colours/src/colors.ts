@@ -1,6 +1,8 @@
 import color, { Color } from './color'
 import { variants } from '@catppuccin/palette'
 
+export { variants } from '@catppuccin/palette'
+export * as color from './color'
 export { Color, alphaBlend } from './color';
 
 export const latte = generateTheme('latte');
@@ -67,7 +69,7 @@ export type Scheme = {
   }
 };
 
-export function generateTheme (name: 'latte' | 'frappe' | 'macchiato' | 'mocha', overrides: any = {}) {
+export function generateTheme(name: 'latte' | 'frappe' | 'macchiato' | 'mocha', overrides: any = {}) {
 
   for (const key in overrides) {
     if (overrides.hasOwnProperty(key)) {
@@ -135,5 +137,5 @@ export function generateTheme (name: 'latte' | 'frappe' | 'macchiato' | 'mocha',
       accent: u(variants[name].mauve.hex),
       error: u(variants[name].red.hex)
     }
-  } satisfies Scheme ;
+  } satisfies Scheme;
 }

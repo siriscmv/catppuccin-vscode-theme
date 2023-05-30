@@ -2,7 +2,7 @@
   "name": "catppuccin-theme",
   "displayName": "Catppuccin vscode theme",
   "description": "Soothing pastel theme",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "publisher": "Siris01",
   "license": "MIT",
   "repository": {
@@ -86,6 +86,26 @@
         "label": "Catppuccin Mocha Darker",
         "uiTheme": "vs-dark",
         "path": "./catppuccin-mocha-darker.json"
+      },
+      {
+        "label": "Catppuccin latte Darker Bordered",
+        "uiTheme": "vs",
+        "path": "./catppuccin-latte-darker-bordered.json"
+      },
+      {
+        "label": "Catppuccin Frappe Darker Bordered",
+        "uiTheme": "vs-dark",
+        "path": "./catppuccin-frappe-darker-bordered.json"
+      },
+      {
+        "label": "Catppuccin Macchiato Darker Bordered",
+        "uiTheme": "vs-dark",
+        "path": "./catppuccin-macchiato-darker-bordered.json"
+      },
+      {
+        "label": "Catppuccin Mocha Darker Bordered",
+        "uiTheme": "vs-dark",
+        "path": "./catppuccin-mocha-darker-bordered.json"
       }
     ],
     "iconThemes": [

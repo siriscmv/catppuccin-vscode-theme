@@ -1,4 +1,4 @@
-import {generateTheme} from '../colours/'
+import { generateTheme, variants } from '../colours/'
 
 export type SchemeName = 'latte' | 'frappe' | 'macchiato' | 'mocha';
 
@@ -27,7 +27,7 @@ const terminalColors = {
     white: '#c7c7c7',
     brightBlack: '#686868',
     brightWhite: '#ffffff'
-  }, 
+  },
   mocha: {
     black: catppuccin.mocha.ui.line.hex(),
     white: '#c7c7c7',
@@ -40,8 +40,13 @@ export default (variant: SchemeName, bordered: boolean, darker: boolean = false)
   let overrides = {};
   if (darker) {
     overrides['mantle'] = '#151517'
+    overrides['base'] = '#151517'
   }
   let scheme = generateTheme(variant, overrides);
+
+  if (darker && bordered) {
+    scheme.ui.line.hex = () => `${variants[variant].mauve.hex}26` //15%
+  }
 
   return {
     type: variant === 'latte' ? 'light' : 'dark',
