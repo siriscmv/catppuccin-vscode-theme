@@ -39,8 +39,9 @@ const terminalColors = {
 export default (variant: SchemeName, bordered: boolean, darker: boolean = false) => {
   let overrides = {};
   if (darker) {
-    overrides['mantle'] = '#151517'
-    overrides['base'] = '#151517'
+    overrides['mantle'] = '#010101'
+    overrides['base'] = '#020202'
+    overrides['crust'] = '#000000'
   }
   let scheme = generateTheme(variant, overrides);
 
